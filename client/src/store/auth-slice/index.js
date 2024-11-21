@@ -1,4 +1,4 @@
-const { createSlice } = require("@reduxjs/toolkit");
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     isAuthenticated: false,
@@ -6,7 +6,7 @@ const initialState = {
     user: null
 }
 const authSlice  = createSlice({
-    name: auth,
+    name: "auth",
     initialState,
     reducers: {
         setUser:(state, action) => {
